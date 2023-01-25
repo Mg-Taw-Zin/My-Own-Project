@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 600px;
+  width: 700px;
+  margin: 15px auto;
+}
+.containerbox {
+  display: flex;
+}
+.card1,
+.card2,
+.card3,
+.card4 {
+  height: 300px;
+  width: 350px;
+  box-shadow: 0 0 15px #333;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+}
+img {
+  height: 300px;
+  width: 350px;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  background: #262626;
+  color: white;
+  padding: 10px;
+  line-height: 25px;
+  text-align: justify;
+  font-family: Verdana;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 40%;
+  bottom: -180px;
+  left: 0;
+  transition: 0.5s;
+}
+.content:hover {
+  bottom: 0;
+}
+.content h2 {
+  padding: 10px;
+  color: tomato;
+}
+.content p {
+  padding: 5px;
+}
+.content a {
+  text-decoration: none;
+  color: orange;
+}
+.content a:hover {
+  color: #ccc;
+}
+.content button {
+  border: none;
+  outline: none;
+  background: linear-gradient(45deg, deeppink, purple);
+  height: 40px;
+  width: 180px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Verdana;
+  color: white;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.content button:hover {
+  background: linear-gradient(-45deg, deeppink, purple);
+}
+@media (max-width: 760px) {
+  .containerbox {
+    display: block;
+  }
+  .container {
+    width: 355px;
+    justify-items: center;
+    margin: 0;
+  }
+}

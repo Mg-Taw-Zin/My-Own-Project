@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- title header -->
+      <div
+        class="con text-white container-fluid d-flex justify-content-between px-lg-5 px-sm-3"
+      >
+        <nav class="m-2 fs-6">
+          <span class="p-1 m-1"
+            ><i class="bi bi-geo-alt-fill"></i
+            ><span class="ms-2"> 123,Street,New York,U.S.A</span></span
+          >
+          <span class="p-1 m-1"
+            ><i class="bi bi-telephone-fill"></i
+            ><span class="ms-2">+012 345 6789</span></span
+          ><span class="p-1 m-1">
+            <i class="bi bi-envelope-open-fill"></i
+            ><span class="ms-2">mail@domain.com</span>
+          </span>
+        </nav>
+        <div class="fs-4 m-1">
+          <a href=""><i class="bi bi-twitter rounded-circle text-white"></i></a>
+          <a href=""
+            ><i class="bi bi-facebook rounded-circle text-white"></i
+          ></a>
+          <a href=""
+            ><i class="bi bi-linkedin rounded-circle text-white"></i
+          ></a>
+          <a href=""
+            ><i class="bi bi-instagram rounded-circle text-white"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- section header -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary mx-lg-4 my-lg-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><i class="bi bi-person-lines-fill"></i> Start Up</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  blogs
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+              </li>
+              <li class="nav-item">
+                <div class="bg-primary">
+                  <a class="nav-link" href="#">Download Pro Version</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <swiper-container>
+        <swiper-slide class="mmm">
+          <div class="hh text-white">
+            <h1 class="h3">CREATIVE & INNOVATIVE</h1>
+            <h2 class="display-1">Creative & Innovative Digital Solution</h2>
+            <div>
+              <a href="#" class="btn btn-primary">Free Quate</a>
+              <a href="#" class="btn btn-outline-primary">Contact Us</a>
+            </div>
+          </div>
+          <img src="./image/photo1.jpg" alt="" />
+        </swiper-slide>
+      </swiper-container>
+    </header>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  </body>
+</html>

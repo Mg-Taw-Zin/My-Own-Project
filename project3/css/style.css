@@ -39,7 +39,7 @@ img {
   border-top-right-radius: 40%;
   bottom: -180px;
   left: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 .content:hover {
   bottom: 0;

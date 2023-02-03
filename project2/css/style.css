@@ -57,16 +57,16 @@ label {
   z-index: 2;
   position: absolute;
   top: 30px;
-  right: 10px;
+  right: 20px;
   cursor: pointer;
   display: none;
 }
 label span {
   display: block;
-  height: 3px;
+  height: 5px;
   width: 30px;
-  background: var(--color);
-  margin: 5px 0;
+  background: black;
+  margin: 3px 0;
   transition: 0.3s;
 }
 label span :nth-child(1) {
@@ -74,22 +74,6 @@ label span :nth-child(1) {
 }
 label span :nth-child(2) {
   width: 50px;
-}
-#toggle:checked ~ label > span :nth-child(1) {
-  background: #fff;
-  transform: rotateZ(45deg);
-  width: 30px;
-  margin-top: 10px;
-}
-#toggle:checked ~ label > span :nth-child(2) {
-  background: #fff;
-  transform: rotateZ(-45deg);
-  width: 30px;
-  margin-top: -8px;
-  margin-left: 19px;
-}
-#toggle:checked ~ header .navbar {
-  left: 0;
 }
 .container {
   margin: 100px auto;
@@ -149,6 +133,22 @@ label span :nth-child(2) {
   color: var(--color);
   cursor: pointer;
 }
+#toggle:checked ~ label > span :nth-child(1) {
+  background: #fff;
+  transform: rotateZ(45deg);
+  width: 30px;
+  margin-top: 10px;
+}
+#toggle:checked ~ label > span :nth-child(2) {
+  background: #fff;
+  transform: rotateZ(-45deg);
+  width: 30px;
+  margin-top: -8px;
+  margin-left: 19px;
+}
+#toggle:checked ~ header .navbar {
+  left: 0;
+}
 @media (max-width: 1250px) {
   .container .contact .info p {
     padding: 0 150px 0 0;
@@ -169,7 +169,7 @@ label span :nth-child(2) {
     position: fixed;
     top: 0;
     left: 100%;
-    background: var(--color);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,6 +210,9 @@ label span :nth-child(2) {
   }
   .container .contact .info p {
     padding: 0 20px;
+  }
+  .logo h2 {
+    font-size: 20px;
   }
 }
 @media (max-width: 470px) {

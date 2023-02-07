@@ -25,7 +25,7 @@
 
   <body>
     <header>
-      <!-- title header -->
+      <!-- title header start -->
       <div
         class="con text-white container-fluid d-flex justify-content-between px-lg-5 px-sm-3"
       >
@@ -55,9 +55,12 @@
           ></a>
         </div>
       </div>
+      <!-- title header end -->
 
-      <!-- section header -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary mx-lg-4 my-lg-3">
+      <!-- section header start-->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary mx-lg-4 my-lg-3 bg-transparent"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><i class="bi bi-person-lines-fill"></i> Start Up</a
@@ -138,20 +141,65 @@
           </div>
         </div>
       </nav>
-      <swiper-container>
-        <swiper-slide class="mmm">
-          <div class="hh text-white">
-            <h1 class="h3">CREATIVE & INNOVATIVE</h1>
-            <h2 class="display-1">Creative & Innovative Digital Solution</h2>
-            <div>
-              <a href="#" class="btn btn-primary">Free Quate</a>
-              <a href="#" class="btn btn-outline-primary">Contact Us</a>
+      <!-- section header end-->
+    </header>
+
+    <section>
+      <!-- Carousel start -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/photo2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CREATIVE & INNOVATIVE</h5>
+              <p>Creative & Innovative Digital Solution</p>
             </div>
           </div>
-          <img src="./image/photo1.jpg" alt="" />
-        </swiper-slide>
-      </swiper-container>
-    </header>
+          <div class="carousel-item">
+            <img src="./image/photo1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CREATIVE & INNOVATIVE</h5>
+              <p>Creative & Innovative Digital Solution</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel end -->
+    </section>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

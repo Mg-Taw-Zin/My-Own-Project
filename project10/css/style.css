@@ -1,23 +1,66 @@
-.con {
-  background: #091e3e !important;
+.position-fixed {
+  z-index: 10000 !important;
 }
-swiper-container img {
-  height: 90vh;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-}
-.mmm {
+.st {
+  height: 400px !important;
+  background-position: top center !important;
   position: relative !important;
+  object-fit: cover !important;
 }
-.hh {
-  position: absolute !important;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) !important;
-  text-align: center;
-  height: 100%;
-  padding-top: 200px;
-  background-color: #00000050;
-  width: 100%;
+.st1 {
+  background-image: url(../image/photo6.jpg) !important;
+}
+.st2 {
+  background-image: url(../image/photo7.jpg) !important;
+}
+.st3 {
+  background-image: url(../image/photo8.jpg) !important;
+}
+.st div {
+  opacity: 0% !important;
+  width: 100% !important;
+  transition: 0.5s !important;
+}
+.st:hover.st div {
+  opacity: 100% !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+.fs {
+  transition: 0.5s !important;
+}
+.fs:hover {
+  transform: scale(130%) !important;
+}
+.purple {
+  background-color: #091e3e !important;
+}
+.ss {
+  transition: 0.5s !important;
+}
+.ss:hover {
+  transform: translate(5%) !important;
+}
+.c1 {
+  background-image: url(../image/photo1.jpg) !important;
+  height: 120vh !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top center !important;
+}
+.abbg {
+  background-image: url(../image/photo1.jpg) !important;
+  height: 80vh !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top center !important;
+}
+.c2 {
+  background-image: url(../image/photo2.jpg) !important;
+  height: 120vh !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top center !important;
+}
+.cbg {
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }

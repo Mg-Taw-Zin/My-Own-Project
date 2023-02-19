@@ -1,0 +1,71 @@
+.first-section {
+  margin: 100px 0;
+}
+.first-section-text {
+  text-align: center;
+}
+.first-section-text h1 {
+  font-size: 75px;
+  line-height: 83px;
+  margin: 30px 0;
+}
+.first-section-text a {
+  font-size: 26px;
+  line-height: 29px;
+  margin: 20px 0;
+  color: var(--primary-color);
+}
+.first-section-text p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 30px auto;
+  width: 50%;
+}
+.first-section-icon {
+  text-align: left;
+  width: 30%;
+  font-size: 22px;
+  line-height: 33px;
+  margin: 30px auto;
+}
+.first-section-icon div {
+  margin: 10px 0;
+}
+.first-section-second-icon a {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 5px;
+}
+.first-section-second-icon :nth-child(1) {
+  background: var(--primary-color);
+  color: white;
+}
+.container-d4 {
+  width: 25%;
+}
+@media (max-width: 1020px) {
+  .first-section-text h1 {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 30px 0;
+  }
+  .first-section-second-icon a {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .first-section-icon {
+    text-align: left;
+    width: 80%;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 30px auto;
+  }
+  .first-section-text p {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 30px auto;
+    width: 80%;
+  }
+}

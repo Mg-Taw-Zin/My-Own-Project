@@ -40,7 +40,8 @@ form h2 {
 form .box {
   height: 50px;
   width: 80%;
-  padding: 0 10px;
+  padding: 5px 35px;
+  font-size: 18px;
   background: none;
   outline: none;
   border: none;
@@ -51,6 +52,7 @@ form .box {
 form i {
   margin-top: 20px;
   padding: 2px 0 0 10px;
+  font-size: 18px;
 }
 form a {
   line-height: 50px;
@@ -97,6 +99,12 @@ input[type="checkbox"] {
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
+}
+span {
+  position: absolute;
+}
+.form-icon {
+  position: relative;
 }
 #switch:checked ~ .controls > label::before {
   left: 63px;

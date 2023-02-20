@@ -9,26 +9,30 @@
   </head>
   <body>
     <header>
-      <div class="maindiv">
-        <div class="res-menu">
-          <div class="navlogo">
-            <img src="./image/alexlogo.jpg" />
+      <div class="header-div">
+        <div class="maindiv">
+          <div class="main-invi">
+            <div class="res-menu">
+              <div class="navlogo">
+                <img src="./image/alexlogo.jpg" />
+              </div>
+            </div>
+            <div class="middlediv">
+              <label for="resnavbar-type">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
           </div>
+          <nav class="lastdiv">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Service</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+          </nav>
         </div>
-        <div class="middlediv">
-          <label for="resnavbar-type">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <nav class="lastdiv">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Service</a>
-          <a href="">Blog</a>
-          <a href="">Contact</a>
-        </nav>
       </div>
     </header>
     <section>
@@ -70,46 +74,54 @@
         <main class="product">
           <div class="shop">
             <img src="./image/laptop1.jpg" />
-            <h3><a href="">Thai tea</a></h3>
+            <a href="">Product</a>
             <p>3000 MMK</p>
           </div>
           <div class="shop">
             <img src="./image/laptop2.jpg" />
-            <h3><a href="">Thai tea</a></h3>
+            <a href="">Product</a>
             <p>3000 MMK</p>
           </div>
           <div class="shop">
             <img src="./image/laptop3.jpg" />
-            <h3><a href="">Thai tea</a></h3>
+            <a href="">Product</a>
             <p>3000 MMK</p>
           </div>
           <div class="shop">
             <img src="./image/laptop4.jpg" />
-            <h3><a href="">Thai tea</a></h3>
+            <a href="">Product</a>
             <p>3000 MMK</p>
           </div>
           <div class="shop">
             <img src="./image/laptop4.jpg" />
-            <h3><a href="">Thai tea</a></h3>
+            <a href="">Product</a>
             <p>3000 MMK</p>
           </div>
           <div class="shop">
             <img src="./image/laptop3.jpg" />
-            <h3><a href="">Thai tea</a></h3>
+            <a href="">Product</a>
             <p>3000 MMK</p>
           </div>
           <div class="shop">
             <img src="./image/laptop2.jpg" />
-            <h3><a href="">Thai tea</a></h3>
+            <a href="">Product</a>
             <p>3000 MMK</p>
           </div>
           <div class="shop">
             <img src="./image/laptop1.jpg" />
-            <h3><a href="">Thai tea</a></h3>
+            <a href="">Product</a>
             <p>3000 MMK</p>
           </div>
         </main>
       </div>
     </section>
+
+    <script>
+      let button = document.querySelector(".middlediv");
+      let show = document.querySelector(".lastdiv");
+      button.onclick = () => {
+        show.classList.toggle("lastdiv-show");
+      };
+    </script>
   </body>
 </html>

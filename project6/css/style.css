@@ -9,7 +9,7 @@
 }
 header {
   width: 100%;
-  background: linear-gradient(80deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(80deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url("../image/bg.jpg");
   background-size: cover;
   background-position: center;
@@ -17,8 +17,8 @@ header {
 nav {
   width: 100%;
   height: 80px;
-  background: #00000070;
-  backdrop-filter: blur(5px);
+  background: #00000050;
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +32,6 @@ nav {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid blue;
   transition: 0.7s;
 }
 .logo:hover {
@@ -46,18 +45,19 @@ nav {
   font-size: 18px;
 }
 .nav-links a:hover {
-  background: rgb(40, 150, 15);
+  background: green;
 }
 #bars {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255);
   padding: 5px 10px;
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
   display: none;
+  color: black;
 }
 .banner {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 90vh;
   display: flex;
@@ -65,7 +65,8 @@ nav {
   align-items: center;
 }
 .banner-group {
-  background: rgb(0, 0, 0, 0.5);
+  background: rgb(0, 0, 0, 0.6);
+  border-radius: 50px;
   text-align: center;
   padding: 30px 50px;
 }
@@ -102,7 +103,7 @@ nav {
 section#about {
   width: 100%;
   height: auto;
-  background: rgb(0, 0, 0);
+  background: black;
   display: flex;
   padding: 120px 30px;
 }
@@ -118,12 +119,12 @@ section#about {
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 10px 10px rgb(61, 195, 20);
+  box-shadow: 0 0 10px 10px green;
 }
 .text-group p {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(160, 160, 160, 0.8);
+  color: rgba(160, 160, 160, 0.6);
   text-align: justify;
   text-transform: capitalize;
   line-height: 25px;
@@ -131,7 +132,7 @@ section#about {
 .text-group h2 {
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: underline;
   margin: 5px 0;
 }
@@ -158,6 +159,7 @@ section#projects {
   align-items: center;
   padding: 20px;
   border-radius: 30px;
+  background: black;
 }
 .project img {
   width: 150px;
@@ -174,12 +176,12 @@ section#projects {
 .project h3 {
   font-size: 35px;
   font-weight: bold;
-  color: yellow;
+  color: green;
   margin: 10px 0;
 }
 .project p {
   font-size: 20px;
-  color: green;
+  color: rgba(0, 128, 0, 0.8);
   margin: 0 20px;
   font-weight: bold;
   text-transform: capitalize;
@@ -243,7 +245,7 @@ section#services {
   padding: 20px 0;
 }
 .contact h1 {
-  color: rgb(0, 120, 20);
+  color: green;
   display: inline-block;
   padding: 10px;
   text-transform: uppercase;
@@ -285,6 +287,11 @@ section#services {
     transform: translate(100%);
     transition: 1s;
   }
+  .banner h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: blue;
+  }
   .show {
     transform: translate(0);
   }
@@ -306,5 +313,18 @@ section#services {
   }
   .contact-type h2 {
     margin: 10px 10px;
+  }
+  .banner h3 {
+    font-weight: bold;
+    margin: 10px 0 30px 0;
+    font-size: 20px;
+    color: green;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  .banner h1 {
+    font-size: 20px;
+    color: green;
   }
 }

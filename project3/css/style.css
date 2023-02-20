@@ -4,54 +4,66 @@
   box-sizing: border-box;
 }
 .container {
-  margin: 15px auto;
-}
-.containerbox {
-  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  column-count: 4;
 }
 .card {
-  box-shadow: 0 0 15px #333;
+  box-shadow: 0 0 30px #333;
   overflow: hidden;
   position: relative;
-  margin: 10px;
+  margin: 10px 5px;
+  width: 100%;
+  height: 300px;
+  display: inline-block;
 }
 img {
-  height: 300px;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
-  object-position: left;
+  object-position: center;
 }
 .content {
   position: absolute;
   background: #000;
   color: white;
   padding: 10px;
-  line-height: 25px;
   text-align: justify;
   font-family: Verdana;
-  border-top-left-radius: 15%;
-  border-top-right-radius: 50%;
-  bottom: -80%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
   left: 0;
-  transition: 0.5s;
-  height: 300px;
+  bottom: 0;
+  transform: translatey(75%);
+  height: 100%;
+  transition: 0.7s;
 }
 .content:hover {
-  bottom: 0;
+  transform: translateY(0);
 }
 .content h2 {
-  padding: 10px;
-  color: tomato;
+  color: orange;
+  padding: 20px 0;
+  text-align: center;
 }
 .content p {
   padding: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
 }
 .content a {
   text-decoration: none;
+  margin: 10px 5px;
   color: orange;
+  font-size: 16px;
+  font-weight: 500;
 }
 .content a:hover {
   color: #ccc;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
 }
 .content button {
   border: none;
@@ -73,10 +85,22 @@ img {
   background: linear-gradient(-45deg, pink, purple);
 }
 @media (max-width: 1024px) {
-  .containerbox {
-    display: block;
+  .container {
+    column-count: 2;
+    padding: 5px 10px;
   }
-  img {
-    width: 100%;
+  .card {
+    box-shadow: 0 0 10px #333;
+    margin: 5px 0;
+  }
+}
+@media (max-width: 680px) {
+  .container {
+    column-count: 1;
+  }
+  .content a {
+    text-decoration: none;
+    margin: 20px 5px;
+    color: orange;
   }
 }

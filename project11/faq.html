@@ -69,7 +69,7 @@
             <i class="bi bi-caret-right-fill"></i>
             <a href="#" class="a">What is Frontend Practice?</a>
           </div>
-          <nav class="second-section-p secondary-font-family-w400">
+          <div class="second-section-p secondary-font-family-w400">
             <p>
               Frontend Practice offers developers the opportunity to practice
               and improve their skills in design, interactions, animations,
@@ -78,12 +78,12 @@
               approach allows developers to gain a diverse set of valuable
               skills that will make them more employable in the industry.
             </p>
-          </nav>
+          </div>
           <div class="paragraph-toggle">
             <i class="bi bi-caret-right-fill"></i>
             <a href="#" class="a">Where is the code? || I need help.</a>
           </div>
-          <nav class="second-section-p secondary-font-family-w400">
+          <div class="second-section-p secondary-font-family-w400">
             <p>
               Frontend Practice does not provide any pre-written code, but we do
               offer a few resources to assist with each project. However, there
@@ -103,14 +103,14 @@
               a wide range of topics and are suitable for developers at all
               levels.
             </p>
-          </nav>
+          </div>
           <div class="paragraph-toggle">
             <i class="bi bi-caret-right-fill"></i>
             <a href="#" class="a"
               >Which languages do I use for these projects?</a
             >
           </div>
-          <nav class="second-section-p secondary-font-family-w400">
+          <div class="second-section-p secondary-font-family-w400">
             <p>
               In short, you can use any programming language you desire for
               these practice projects.
@@ -120,24 +120,24 @@
               utilize any tech stack, such as HTML, CSS, JavaScript, React, Vue,
               Angular, Svelte, or any other language, framework, or library.
             </p>
-          </nav>
+          </div>
           <div class="paragraph-toggle">
             <i class="bi bi-caret-right-fill"></i>
             <a href="#" class="a">Where can I find images and icons?</a>
           </div>
-          <nav class="second-section-p secondary-font-family-w400">
+          <div class="second-section-p secondary-font-family-w400">
             <p>
               Pexels and Pixabay are excellent sources for free stock photos,
               while Boxicons and Font Awesome offer a variety of free icons.
               Links to these resources can be found at the top of every project
               page on Frontend Practice.
             </p>
-          </nav>
+          </div>
           <div class="paragraph-toggle">
             <i class="bi bi-caret-right-fill"></i>
             <a href="#" class="a">Why did you pick these websites?</a>
           </div>
-          <nav class="second-section-p secondary-font-family-w400">
+          <div class="second-section-p secondary-font-family-w400">
             <p>
               The selection of websites featured on Frontend Practice is based
               on personal preference and takes into consideration various
@@ -149,12 +149,12 @@
               It is important to note that some projects may be more challenging
               to recreate than others.
             </p>
-          </nav>
+          </div>
           <div class="paragraph-toggle">
             <i class="bi bi-caret-right-fill"></i>
             <a href="#" class="a">Can I use these in my portfolio?</a>
           </div>
-          <nav class="second-section-p secondary-font-family-w400">
+          <div class="second-section-p secondary-font-family-w400">
             <p>
               We encourage you to make these projects your own by incorporating
               your own colors, content, and images. If you choose to use these
@@ -167,40 +167,7 @@
               featured on Frontend Practice are intended for practice purposes
               only.
             </p>
-          </nav>
-          <div class="paragraph-toggle">
-            <i class="bi bi-caret-right-fill"></i>
-            <a href="#" class="a"
-              >Why does the live website not look like the project anymore?</a
-            >
           </div>
-          <nav class="second-section-p secondary-font-family-w400">
-            <p>
-              How dare they update the website! We will talk with their manager
-              right away. If they don't respond, we'll periodically check the
-              websites we feature and make the necessary updates.
-            </p>
-            <p>
-              In some cases, if we really love the previous design, we may keep
-              it and link to an archived page if possible. If not, please see
-              the reference image on the project page.
-            </p>
-          </nav>
-          <div class="paragraph-toggle">
-            <i class="bi bi-caret-right-fill"></i>
-            <a href="#" class="a">Where did some of the projects go?</a>
-          </div>
-          <nav class="second-section-p secondary-font-family-w400">
-            <p>
-              Occasionally we will retire projects from the main collection if
-              the design is no longer up to date or an archived version is not
-              available.
-            </p>
-            <p>
-              You can still find the retired projects at the bottom of our
-              Projects page.
-            </p>
-          </nav>
         </div>
       </section>
       <!-- second section end  -->
@@ -217,16 +184,23 @@
               Frontend Practice - © 2023
             </h1>
             <div class="footer-section-icon">
-              <a href="#" class="a secondary-font-family-w600">Home</a>
-              <a href="#" class="a secondary-font-family-w600">Projects</a>
-              <a href="#" class="a secondary-font-family-w600">FAQ</a>
-              <a href="#" class="a secondary-font-family-w600">News Letter</a>
-              <a href="#" class="a secondary-font-family-w600">Contact</a>
+              <a href="index.html" class="a secondary-font-family-w600">Home</a>
+              <a href="project.html" class="a secondary-font-family-w600"
+                >Projects</a
+              >
+              <a href="faq.html" class="a secondary-font-family-w600">FAQ</a>
+              <a href="newletter.html" class="a secondary-font-family-w600"
+                >News Letter</a
+              >
+              <a href="contact.html" class="a secondary-font-family-w600"
+                >Contact</a
+              >
             </div>
           </div>
         </div>
       </section>
     </footer>
+
     <!-- footer section end  -->
 
     <!-- javascript start -->
@@ -238,10 +212,14 @@
         headericon.classList.toggle("show");
       };
 
-      let toggle = document.querySelector(".paragraph-toggle");
-      toggle.onclick = function () {
-        this.nextElementSibling.classList.toggle("p-show");
-      };
+      let toggle = document.querySelectorAll(".paragraph-toggle");
+      // console.log(toggle);
+      toggle.forEach((value) => {
+        value.onclick = function () {
+          // console.log(this.nextElementSibling);
+          this.nextElementSibling.classList.toggle("p-show");
+        };
+      });
     </script>
 
     <!-- javascript end  -->

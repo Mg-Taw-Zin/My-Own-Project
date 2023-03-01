@@ -270,7 +270,12 @@ section#services {
   cursor: pointer;
 }
 /* media Query */
-@media (max-width: 620px) {
+@media (max-width: 1020px) {
+  #about {
+    flex-direction: column;
+  }
+}
+@media (max-width: 870px) {
   #bars {
     display: block;
   }
@@ -299,9 +304,6 @@ section#services {
     display: block;
     margin-bottom: 20px;
     text-align: center;
-  }
-  #about {
-    flex-direction: column;
   }
   .text-group {
     margin-top: 30px;

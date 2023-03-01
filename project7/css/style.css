@@ -58,7 +58,7 @@ h1 {
   outline: 0;
   border: 2px solid black;
 }
-@media (max-width: 620px) {
+@media (max-width: 1020px) {
   #contact-form {
     background-color: lightgreen;
     padding: 50px;

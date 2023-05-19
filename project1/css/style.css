@@ -4,11 +4,13 @@
   font-family: Verdana;
   transition: all 0.3s linear;
 }
+
 body {
   min-height: 100vh;
   overflow: hidden;
   background: #333;
 }
+
 .side-image > img {
   position: absolute;
   bottom: 5px;
@@ -16,6 +18,7 @@ body {
   z-index: 2;
   width: 600px;
 }
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -24,6 +27,7 @@ body {
   justify-content: center;
   background: linear-gradient(45deg, #333 80%, #5c5cd6 20%);
 }
+
 form {
   width: 350px;
   margin-left: 200px;
@@ -33,10 +37,12 @@ form {
   color: #5c5cd6;
   padding: 30px 20px;
 }
+
 form h2 {
   line-height: 70px;
   font-size: 30px;
 }
+
 form .box {
   height: 50px;
   width: 80%;
@@ -49,16 +55,20 @@ form .box {
   color: white;
   border-bottom: 2px solid #5c5cd6;
 }
+
 form i {
   margin-top: 20px;
   padding: 2px 0 0 10px;
   font-size: 18px;
 }
+
 form a {
   line-height: 50px;
-  color: orange;
+  color: #5c5cd6;
   text-decoration: none;
+  font-weight: bold;
 }
+
 form .btn {
   color: white;
   height: 45px;
@@ -71,14 +81,17 @@ form .btn {
   border-radius: 50px;
   margin-top: 15px;
 }
+
 input[type="checkbox"] {
   display: none;
 }
+
 .controls {
   position: absolute;
   top: 5px;
   left: 5px;
 }
+
 .controls > label {
   display: block;
   height: 40px;
@@ -88,6 +101,7 @@ input[type="checkbox"] {
   position: relative;
   background: #333;
 }
+
 .controls > label::before {
   content: "";
   position: absolute;
@@ -100,45 +114,57 @@ input[type="checkbox"] {
   cursor: pointer;
   transition: 0.3s;
 }
+
 span {
   position: absolute;
 }
+
 .form-icon {
   position: relative;
 }
+
 #switch:checked ~ .controls > label::before {
   left: 45px;
   background: #333;
 }
+
 #switch:checked ~ .controls > label {
   background: #f7f7f7;
 }
+
 #switch:checked ~ .container {
   background: linear-gradient(45deg, #f7f7f7 80%, #5c5cd6 20%);
 }
+
 #switch:checked ~ .container > form > .box {
   color: black;
 }
+
 #switch:checked ~ .side-image img {
   display: none;
 }
+
 @media (max-width: 1300px) {
   .side-image > img {
     width: 400px;
   }
+
   form {
     margin-left: 0;
   }
 }
+
 @media (max-width: 1120px) {
   .side-image > img {
     display: none;
   }
 }
+
 @media (max-width: 600px) {
   .container {
     background: #333;
   }
+
   #switch:checked ~ .container {
     background: #f7f7f7;
   }

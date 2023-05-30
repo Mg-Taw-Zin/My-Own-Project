@@ -1,148 +1,127 @@
-:root {
-  --primary-color: #000;
-  --secondary-color: #494949;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  width: 85%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --third-color: rgba(255, 255, 255, 0.6);
+  --foruth-color: green;
+  --fifth-color: blue;
 }
-.header-flex {
-  width: 85%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-}
-.primary-font-family-w600 {
-  font-family: "DM Serif Display", serif;
-  font-weight: 600;
-}
-.primary-font-family-w700 {
-  font-family: "DM Serif Display", serif;
-  font-weight: 700;
-}
-.secondary-font-family-w600 {
-  font-family: Archivo, sans-serif;
-  font-weight: 600;
-}
-.secondary-font-family-w400 {
-  font-family: Archivo, sans-serif;
-  font-weight: 400;
-}
-.secondary-font-family-w700 {
-  font-family: Archivo, sans-serif;
-  font-weight: 700;
-}
-.container-item {
-  width: 50%;
-  height: 100%;
-}
-.container-flex {
-  display: flex;
-}
-.a {
-  text-decoration: none;
-}
-/* important */
-.header {
-  height: 60px;
+/* sidebar css */
+
+.sidebar {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border-right: 2px solid var(--primary-color);
   position: fixed;
   top: 0;
-  border-bottom: 2px solid var(--primary-color);
-  width: 100%;
-  z-index: 1000;
-  background: white;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: 1s;
 }
-.header-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.sidebar-show {
+  transform: translateX(0%);
 }
-.header-logo a {
-  font-size: 25px;
-  color: var(--primary-color);
-  font-size: 30px;
-  line-height: 45px;
-}
-.header-section-icon {
-  list-style: none;
-  display: flex;
-}
-.header-section-icon li a {
-  color: var(--primary-color);
-  font-size: 18px;
-  line-height: 27px;
-  margin: 0 5px;
-  padding: 10px;
-}
-.header-section-icon li a:hover,
-.header-logo a:hover {
-  text-decoration: underline;
-}
-.responsive {
-  display: none;
-}
-.footer-section {
-  background: var(--primary-color);
-}
-.footer-section-text {
-  color: white;
+.profile {
+  width: 80%;
+  padding-bottom: 20px;
+  margin: 30px auto;
   text-align: center;
-  padding: 20px 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  color: var(--primary-color);
 }
-.footer-section-text h1,
-.footer-section-icon a {
-  font-size: 16px;
-  line-height: 24px;
+.profile img {
+  width: 150px;
+  border-radius: 50%;
 }
-.footer-section-icon a {
-  color: white;
+.profile h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.profile p {
+  font-size: 18px;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+}
+.sidebar ul li {
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 25px;
+  width: 100%;
+}
+.sidebar ul li a {
+  color: var(--primary-color);
+  display: block;
+  text-decoration: none;
+}
+.sidebar ul li a span {
   margin: 0 10px;
 }
-.footer-section-icon,
-.footer-section-text h1 {
-  margin: 20px 0;
+.sidebar ul li a:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
+.icon {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 25px;
+}
+
+/* sidebar css */
+
+/* menu css */
+
+.menu-position {
+  margin: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.menu-position button {
+  width: 50px;
+}
+.menu-position button {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* menu css */
+
+/* main css */
+
+.index {
+  text-align: justify;
+  font-family: Verdana;
+  background: var(--secondary-color);
+  margin: 10px;
+  background-color: rgba(200, 180, 180);
+  padding: 20px;
+}
+.index p {
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* main css */
+
 @media (max-width: 1020px) {
-  .header-section-icon li a {
-    color: var(--primary-color);
-    font-size: 24px;
-    line-height: 36px;
-  }
-  .header-section-icon {
-    display: block;
-    margin: 20px 10px;
-  }
-  .header-icon {
-    position: absolute;
-    transform: translate(100%);
-    transition: 1s;
-    height: 100vh;
-    width: 60%;
-    top: 0;
-    right: 0;
-    background: rgb(255, 255, 255);
-    border-left: 2px solid var(--primary-color);
-  }
-  .show {
-    transform: translate(0);
-  }
-  .responsive {
-    display: block;
-    z-index: 1000;
-  }
-  .responsive button {
-    font-size: 30px;
-  }
-  .container,
-  .container-item {
-    width: 90%;
-    display: block;
+  .sidebar {
+    width: 100%;
+    border-right: none;
   }
 }

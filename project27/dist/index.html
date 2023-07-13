@@ -17,53 +17,51 @@
       <!-- header section start -->
 
       <section>
-        <div
-          class="relative mx-auto flex w-5/6 items-center justify-between py-4 text-white"
-        >
+        <div class="fixed h-auto w-full">
           <div
-            class="flex cursor-pointer items-center justify-center gap-2 font-bold"
+            class="relative mx-auto flex w-5/6 items-center justify-between bg-primary-color py-4 text-white"
           >
-            <i class="bi bi-alt text-xl"></i>
-            <h1 class="text-sm font-bold sm:text-xl">Knowadays</h1>
-          </div>
-          <div
-            class="absolute -bottom-full flex h-full w-full items-center justify-center gap-2 bg-primary-color text-xs md:text-sm lg:relative lg:block lg:h-auto lg:w-auto lg:text-base lg:font-thin"
-          >
-            <a
-              class="l w-full text-center hover:text-gray-300 lg:mx-2"
-              href="index.html"
-              >Courses</a
+            <div
+              class="flex cursor-pointer items-center justify-center gap-2 font-bold"
             >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="costumer.html"
-              >Success Stories</a
+              <i class="bi bi-alt text-sm sm:text-lg"></i>
+              <h1 class="text-sm font-bold sm:text-xl">Knowadays</h1>
+            </div>
+            <div id="nav-button">
+              <button>
+                <i class="bi bi-list sm:text-xl md:hidden"></i>
+              </button>
+            </div>
+            <div
+              class="absolute top-full flex w-full translate-x-full flex-col bg-primary-color text-base duration-200 ease-in-out md:relative md:block md:w-auto md:translate-x-0 md:text-sm lg:text-base lg:font-thin"
+              id="nav-toggle"
             >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="product.html"
-              >Guranteed Work</a
-            >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="about.html"
-              >Resources</a
-            >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="blog.html"
-              >Blog</a
-            >
-          </div>
-          <div
-            class="flex items-center justify-center gap-2 text-xs font-thin sm:text-sm md:gap-10 md:text-lg"
-          >
-            <a class="hover:text-cyan-300" href="#">Sign in</a>
-            <a
-              class="rounded-full bg-green-400 px-2 text-black hover:bg-green-500 hover:text-white lg:px-4 lg:py-1"
-              href="#"
-              >Try For Free</a
-            >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="index.html"
+                >Courses</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="costumer.html"
+                >Success Stories</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="product.html"
+                >Guranteed Work</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="about.html"
+                >Resources</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="blog.html"
+                >Blog</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -79,16 +77,16 @@
       <section>
         <div
           style="background-image: url(./image/indexphoto/indexphoto1.avif)"
-          class="mx-auto flex h-100vh w-5/6 flex-col items-center justify-end bg-cover bg-center bg-no-repeat py-3 text-white"
+          class="mx-auto flex h-100vh w-5/6 flex-col items-center justify-center bg-sky-950 bg-cover bg-center bg-no-repeat py-3 text-white sm:justify-end"
         >
           <h1
-            class="mb-5 w-4/6 text-center text-3xl font-bold md:text-5xl md:font-normal"
+            class="mb-5 w-4/6 py-5 text-center text-3xl font-bold md:text-5xl md:font-normal"
           >
             Kick-start your career with our expert courses
           </h1>
           <a
             href="#"
-            class="mb-10 mt-7 rounded-full bg-green-400 px-2 text-black hover:bg-green-500 hover:text-white lg:px-4 lg:py-1"
+            class="mb-10 mt-5 rounded-full bg-green-400 px-2 py-1 text-black shadow-xl hover:bg-green-500 hover:text-white md:mt-7 lg:px-4 lg:py-1"
             >Try for free</a
           >
         </div>
@@ -593,5 +591,16 @@
     </footer>
 
     <!-- footer end -->
+
+    <!-- javascript start -->
+    <script>
+      const navButton = document.querySelector("#nav-button");
+      const navToggle = document.querySelector("#nav-toggle");
+
+      navButton.onclick = () => {
+        navToggle.classList.toggle("translate-x-full");
+      };
+    </script>
+    <!-- javascript end -->
   </body>
 </html>
